@@ -1,0 +1,184 @@
+{
+    "configurations": [
+        {
+            "name": "x86-Release-win",
+            "generator": "Visual Studio 17 2022",
+            "configurationType": "Release",
+            "inheritEnvironments": [ "msvc_x86_x64" ],
+            "intelliSenseMode": "windows-msvc-x86",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "WINDOWS_DEPENDENCY_TOOLCHAIN",
+                    "value": "C:\\Program Files (x86)\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake",
+                    "type": "PATH"
+                },
+                {
+                    "name": "BOOST_REQUIRED",
+                    "value": "true",
+                    "type": "BOOL"
+                },
+                {
+                  "name": "GTEST_REPOSITORY",
+                  "value": "https://github.com/google/googletest.git",
+                  "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "x86-Debug-win",
+            "generator": "Visual Studio 17 2022",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "msvc_x86_x64" ],
+            "intelliSenseMode": "windows-msvc-x86",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "WINDOWS_DEPENDENCY_TOOLCHAIN",
+                    "value": "C:/Program Files (x86)/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                    "type": "PATH"
+                },
+                {
+                    "name": "BOOST_REQUIRED",
+                    "value": "true",
+                    "type": "BOOL"
+                },
+                {
+                    "name": "GTEST_REPOSITORY",
+                    "value": "https://github.com/google/googletest.git",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "x64-Release-win",
+            "generator": "Visual Studio 17 2022 Win64",
+            "configurationType": "Release",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "intelliSenseMode": "windows-msvc-x64",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "WINDOWS_DEPENDENCY_TOOLCHAIN",
+                    "value": "C:/Program Files (x86)/vcpkg/scripts/buildsystems/vcpkg.cmake",
+                    "type": "PATH"
+                },
+                {
+                    "name": "BOOST_REQUIRED",
+                    "value": "true",
+                    "type": "BOOL"
+                },
+                {
+                    "name": "GTEST_REPOSITORY",
+                    "value": "https://github.com/google/googletest.git",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "x64-Debug-win",
+            "generator": "Visual Studio 17 2022 Win64",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "msvc_x64_x64" ],
+            "intelliSenseMode": "windows-msvc-x64",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "WINDOWS_DEPENDENCY_TOOLCHAIN",
+                    "value": "https://github.com/google/googletest.git",
+                    "type": "PATH"
+                },
+                {
+                    "name": "BOOST_REQUIRED",
+                    "value": "true",
+                    "type": "BOOL"
+                },
+                {
+                    "name": "GTEST_REPOSITORY",
+                    "value": "https://github.com/google/googletest.git",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "x64-Release-linux",
+            "generator": "Unix Makefiles",
+            "configurationType": "Release",
+            "inheritEnvironments": [ "linux_x64" ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "WINDOWS_DEPENDENCY_TOOLCHAIN",
+                    "value": "",
+                    "type": "PATH"
+                },
+                {
+                    "name": "BOOST_REQUIRED",
+                    "value": "true",
+                    "type": "BOOL"
+                },
+                {
+                    "name": "GTEST_REPOSITORY",
+                    "value": "https://github.com/google/googletest.git",
+                    "type": "STRING"
+                },
+                {
+                    "name": "CMAKE_PREFIX_PATH",
+                    "value" : "",
+                    "type" : "STRING"
+                }
+            ]
+        },
+        {
+            "name": "x64-Debug-linux",
+            "generator": "Unix Makefiles",
+            "configurationType": "Debug",
+            "inheritEnvironments": [ "linux_x64" ],
+            "intelliSenseMode": "linux-gcc-x64",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "",
+            "ctestCommandArgs": "",
+            "variables": [
+                {
+                    "name": "WINDOWS_DEPENDENCY_TOOLCHAIN",
+                    "value": "",
+                    "type": "PATH"
+                },
+                {
+                    "name": "BOOST_REQUIRED",
+                    "value": "true",
+                    "type": "BOOL"
+                },
+                {
+                    "name": "GTEST_REPOSITORY",
+                    "value": "https://github.com/google/googletest.git",
+                    "type": "STRING"
+                }
+            ]
+        }
+
+    ]
+  }
